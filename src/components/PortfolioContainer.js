@@ -5,6 +5,7 @@ import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import { Helmet } from 'react-helmet';
+import Footer from './Footer';
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('About');
@@ -30,14 +31,13 @@ export default function PortfolioContainer() {
       <Helmet>
         <title>Giselle Lupercio's PortFolio | {currentPage}</title>
       </Helmet>
-      ;
       <Header
         currentPage={currentPage} handlePageChange={handlePageChange}
       ></Header>
       <main>{/* Here we are calling the renderPage method which will return a component  */}
         {renderPage()}</main>
-        
-      
+      {/* footer will go here */}
+      <Footer></Footer>
     </>
   );
 }
