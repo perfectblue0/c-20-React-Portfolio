@@ -7,6 +7,11 @@ export default function Contact() {
     const [erName, setNameE] = useState(false);
     const [erEmail, setEmailE] = useState(false);
     const [erMessage, setMessageE] = useState(false);
+
+    const emailVal = (email) => {
+      const patEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+      return patEmail.test(email);
+    };
   
     const handleNameChange = (event) => {
       setName(event.target.value);
@@ -15,7 +20,7 @@ export default function Contact() {
   
     const handleEmailChange = (event) => {
       setEmail(event.target.value);
-      setEmailE(false);
+      setEmailE(!emailVal(event.target.value));
     };
   
     const handleMessageChange = (event) => {
