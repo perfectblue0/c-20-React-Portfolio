@@ -1,29 +1,77 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 export default function Contact() {
-  return (
-    <div>
-      <h1>Contact Me</h1>
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+    const [erName, setNameE] = useState(false);
+    const [erEmail, setEmailE] = useState(false);
+    const [erMessage, setMessageE] = useState(false);
+  
+    const handleNameChange = (event) => {
+      setName(event.target.value);
+      setNameE(false);
+    };
+  
+    const handleEmailChange = (event) => {
+      setEmail(event.target.value);
+      setEmailE(false);
+    };
+  
+    const handleMessageChange = (event) => {
+      setMessage(event.target.value);
+      setMessageE(false);
+    };
+  
+    const handleBlur = () => {
+      if (!name) {
+        setNameE(true);
+      }
+      if (!email) {
+        setEmailE(true);
+      }
+      if (!message) {
+        setMessageE(true);
+      }
+    };
+  
+    return (
       <div>
+        <h2>Contact Form</h2>
         <form>
-          <label>Name</label>
-          <input
-          type="text" 
-          placeholder='Please write your name'
-          />
-          <label>Email</label>
-          <input
-          type="email"
-          placeholder='Please write you email address' 
-          />
-          <label>Message</label>
-          <input
-          type="textarea"
-          placeholder='Write your message here'
-          />
-          <button type="button">Submit</button>
+          <div>
+            <label>Name:</label>
+            <input
+              type="text"
+              value={name}
+              onChange={handleNameChange}
+              onBlur={handleBlur}
+            />
+            {erName && <p className="error-message">Name is required</p>}
+          </div>
+          <div>
+            <label>Email:</label>
+            <input
+              type="email"
+              value={email}
+              onChange={handleEmailChange}
+              onBlur={handleBlur}
+            />
+            {erEmail && <p className="error-message">Email is required</p>}
+          </div>
+          <div>
+            <label>Message:</label>
+            <textarea
+              value={message}
+              onChange={handleMessageChange}
+              onBlur={handleBlur}
+            />
+            {erMessage && <p className="error-message">Message is required</p>}
+          </div>
+          <button type="submit">Submit</button>
         </form>
       </div>
-    </div>
-  );
-}
+    );
+  }
+  
+  

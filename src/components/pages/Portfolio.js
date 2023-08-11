@@ -30,6 +30,18 @@ function Portfolio() {
           depLink="https://vast-depths-98905.herokuapp.com/"
           gitHLink="https://github.com/perfectblue0/c-11-Express-Note-Taker"
         />
+        <Project
+          pTitle="Group Project 1: Sunny Search"
+          image="sunny-s.png"
+          depLink="https://perfectblue0.github.io/group-project-1/"
+          gitHLink="https://github.com/perfectblue0/group-project-1"
+        />
+        <Project
+          pTitle="My First Portfolio"
+          image="first-port.png"
+          depLink="https://perfectblue0.github.io/challenge-2-portfolio/"
+          gitHLink="https://github.com/perfectblue0/challenge-2-portfolio"
+        />
       </div>
     </div>
   );
