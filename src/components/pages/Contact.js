@@ -62,7 +62,7 @@ export default function Contact() {
               onChange={handleEmailChange}
               onBlur={handleBlur}
             />
-            {erEmail && <p className="error-message">Email is required</p>}
+            {erEmail && <p className="error-message">A valid email is required</p>}
           </div>
           <div>
             <label>Message:</label>
