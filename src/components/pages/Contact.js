@@ -43,7 +43,7 @@ export default function Contact() {
     return (
       <div>
         <h2>Contact Form</h2>
-        <form>
+        <form className='bodyText'>
           <div>
             <label>Name:</label>
             <input

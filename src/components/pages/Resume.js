@@ -7,7 +7,7 @@ export default function Resume() {
     <div>
       <section>
         <h2>My Developer Proficiencies</h2>
-        <div>
+        <div className='bodyText'>
           {allSkills.map((category) => (
             <div key={category.category}>
               <h2>{category.category}</h2>
@@ -23,7 +23,7 @@ export default function Resume() {
         </div>
       </section>
       <div>
-        <p>Download my resume:</p>
+        <h2>Download my resume:</h2>
         <a href={resume} download="fake-resume.pdf">
           Download Resume
         </a>
