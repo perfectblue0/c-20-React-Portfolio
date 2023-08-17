@@ -18,6 +18,7 @@ h1 {
 body {
     background-image: url("./projectImages/textureBack.jpg");
     background-size: cover;
+    background-attachment: fixed;
 }
 
 /* styles the big image at top*/
@@ -48,12 +49,19 @@ body {
 /* styles the navigation content */
 h2 {
     font-family: 'Red Hat Text', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    text-shadow: 2px 2px 4px rgba(231, 255, 78, 0.5);
 }
 
 .nav-tabs {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
+}
+
+ul.nav.nav-tabs {
+    padding-left: 0px;
 }
 
 .nav-item {
@@ -64,7 +72,6 @@ h2 {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin: 5px;
   text-align: center;
   border: 1px solid rgba(251, 205, 79, 0.295);
 }
@@ -87,7 +94,6 @@ a:visited {
 }
 
 /* styles profile picture */
-
 .profile-pic {
     width: 200px;
     height: 200px;
@@ -100,10 +106,29 @@ a:visited {
 .profile-pic img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Maintain aspect ratio and cover the entire circle */
-  }
+    object-fit: cover;
+}
+
+.aboutBox {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./projectImages/aboutBack.jpg");
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+    opacity: .8;
+    border-radius: 5px;
+}
 
 /* styles smaller text that makes up the descriptive content */
 .bodyText {
     font-family: 'Open Sans', sans-serif;
+    color: rgb(227, 205, 5);
+    text-shadow: 2px 2px 4px rgb(192, 0, 176);
+    width: 70%;
+    text-align: center;
 }
