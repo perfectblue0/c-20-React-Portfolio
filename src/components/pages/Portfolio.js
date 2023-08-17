@@ -3,9 +3,9 @@ import Project from '../Project';
 
 function Portfolio() {
   return (
-    <div>
+    <div className='titlePCont'>
       <h2>My Projects</h2>
-      <div>
+      <div className='projectCont'>
         <Project
           pTitle="Random Password Generator"
           image="random-pass.png"

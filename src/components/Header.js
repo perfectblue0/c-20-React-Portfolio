@@ -12,6 +12,9 @@ function Header(props) {
             <h1>Giselle Lupercio</h1>
           </div>
           <div>
+            <div className="message">
+              <p>Let's create something together</p>
+            </div>
             <Navtabs
               currentPage={currentPage}
               handlePageChange={handlePageChange}
