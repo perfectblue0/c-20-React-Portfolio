@@ -41,10 +41,10 @@ export default function Contact() {
     };
   
     return (
-      <div>
+      <div className='contactCont'>
         <h2>Contact Form</h2>
         <form className='bodyText'>
-          <div>
+          <div className='clientIn'>
             <label>Name:</label>
             <input
               type="text"
@@ -52,9 +52,9 @@ export default function Contact() {
               onChange={handleNameChange}
               onBlur={handleBlur}
             />
-            {erName && <p className="error-message">Name is required</p>}
+            {erName && <span className="error-message">Name is required</span>}
           </div>
-          <div>
+          <div className='clientIn'>
             <label>Email:</label>
             <input
               type="email"
@@ -62,16 +62,16 @@ export default function Contact() {
               onChange={handleEmailChange}
               onBlur={handleBlur}
             />
-            {erEmail && <p className="error-message">A valid email is required</p>}
+            {erEmail && <span className="error-message">A valid email is required</span>}
           </div>
-          <div>
+          <div className='clientIn'>
             <label>Message:</label>
             <textarea
               value={message}
               onChange={handleMessageChange}
               onBlur={handleBlur}
             />
-            {erMessage && <p className="error-message">Message is required</p>}
+            {erMessage && <span className="error-message">Message is required</span>}
           </div>
           <button type="submit">Submit</button>
         </form>
