@@ -5,27 +5,27 @@ export default function Resume() {
   const resume = require("../../assets/fake-resume.pdf");
   return (
     <div>
-      <section>
+      <section className="resumeCont">
         <h2>My Developer Proficiencies</h2>
-        <div className='bodyText'>
+        <div className='bodyText resumeBody'>
           {allSkills.map((category) => (
-            <div key={category.category}>
-              <h2>{category.category}</h2>
-              <ul>
+            <div key={category.category} className="skillCont">
+              <h2 className="profTitles">{category.category}</h2>
+              <section>
                 {category.skills.map((skill, index) => (
-                  <li key={index}>
-                    <strong>{skill.name}</strong> - {skill.description}
-                  </li>
+                  <p key={index}>
+                    <strong>{skill.name}</strong>
+                  </p>
                 ))}
-              </ul>
+              </section>
             </div>
           ))}
         </div>
       </section>
-      <div>
-        <h2>Download my resume:</h2>
-        <a href={resume} download="fake-resume.pdf">
-          Download Resume
+      <div className="linkCont">
+        <h2 className="downTitle">Download my resume:</h2>
+        <a href={resume} download="fake-resume.pdf" className="resumeLink">
+          Begin Download
         </a>
       </div>
     </div>

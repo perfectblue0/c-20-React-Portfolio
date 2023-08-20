@@ -5,14 +5,14 @@ function Footer() {
     return (
       <footer>
         <div>
-          <a href="https://github.com/perfectblue0">
-            <FaGithub size={32} />
+          <a href="https://github.com/perfectblue0" target="_blank" rel="noreferrer">
+            <FaGithub size={50} className='icon'/>
           </a>
-          <a href="https://linkedin.com/in/paola-g-lupercio/">
-            <FaLinkedin size={32} />
+          <a href="https://linkedin.com/in/paola-g-lupercio/" target="_blank" rel="noreferrer">
+            <FaLinkedin size={50} className='icon'/>
           </a>
-          <a href="https://stackoverflow.com/users/22384896/perfectblue-000">
-            <FaStackOverflow size={32} />
+          <a href="https://stackoverflow.com/users/22384896/perfectblue-000" target="_blank" rel="noreferrer">
+            <FaStackOverflow size={50} className='icon'/>
           </a>
         </div>
       </footer>

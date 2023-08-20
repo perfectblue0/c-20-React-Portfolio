@@ -72,7 +72,8 @@ ul.nav.nav-tabs {
     padding-left: 0px;
 }
 
-.nav-item, button {
+button, .resumeLink {
+  font-family: 'Open Sans', cursive;
   display: inline-block;
   padding: 10px 20px;
   background-color: rgba(0, 123, 255, 0.2);
@@ -88,7 +89,7 @@ ul.nav.nav-tabs {
     color: #FFEB3B;
   }
 
-.nav-item:hover, button:hover {
+.nav-item:hover, button:hover, .resumeLink:hover {
     background-color: rgba(0, 123, 255, 0.7);
 }
 
@@ -132,7 +133,7 @@ a:visited {
     border-radius: 5px;
 }
 
-.titlePCont {
+.titlePCont, .resumeCont {
     background-image: url('./projectImages/textureBack.jpg');
     position: relative;
     background-size: cover;
@@ -152,7 +153,7 @@ a:visited {
 }
 
 .project {
-    flex: 0 0 calc(50% - 10px); /* Half of the available space minus margins */
+    flex: 0 0 calc(50% - 10px); 
     margin-bottom: 100px;
     text-align: center;
   }
@@ -165,7 +166,12 @@ img.project-image {
 .project-image:hover {
     box-shadow: 7px 8px 8px rgb(0, 123, 255, 0.7);
   }
-  
+
+/* extra shadow for about h2 title */
+.extraYellow {
+    text-shadow: 2px 2px 4px rgba(231, 255, 78, 0.805);
+}
+
 /* styling for project titles */
 
 .project-title {
@@ -177,7 +183,7 @@ img.project-image {
 }
 
 .project-link:hover {
-    text-shadow: 2px 2px 4px rgb(0, 123, 255, 0.7);
+    text-shadow: 2px 2px 4px rgba(0, 123, 255, 0.664);
 }
 
 /* contact form styling */
@@ -203,7 +209,8 @@ img.project-image {
 }
 
 form.bodyText {
-    background: black;
+    background-color: rgba(9, 0, 0, 0.806);
+    border-radius: 5px;
     margin-bottom: 80px;
     padding-bottom: 50px;
     border-radius: 5px;
@@ -223,6 +230,11 @@ textarea {
     width: 200px;
 }
 
+.myEmail {
+    color: white;
+}
+
+/* form error styling */
 .error-message {
     color: red;
     font-size: 10px;
@@ -232,6 +244,42 @@ textarea {
     top: 100%;
 }
 
+/* resume styling */
+
+.resumeBody {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.resumeCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profTitles, .downTitle {
+    font-family: 'Julius Sans One', cursive;
+    color: white;
+    font-size: 15px;
+}
+
+.skillCont {
+    margin: 10px;
+    padding: 10px;
+    width: 35%;
+    background-color: rgba(9, 0, 0, 0.806);
+    border-radius: 5px;
+}
+
+li {
+    list-style: none;
+}
+
+.linkCont {
+    text-align: center;
+}
 
 /* styles smaller text that makes up the descriptive content */
 .bodyText, .project-link {
@@ -242,3 +290,62 @@ textarea {
     text-align: center;
 }
 
+/* footer icon styling */
+
+footer {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.icon {
+    color: white;
+    margin: 25px;
+    padding: 10px;
+}
+
+.icon:hover {
+    color: rgba(0, 123, 255, 0.7);
+}
+
+/* media queries */
+
+@media screen and (max-width: 500px) {
+    h1 {
+        font-size: 70px;
+    }
+
+    .nav-tabs {
+        flex-direction: column;
+    }
+
+    .nav-item {
+        margin-bottom: 30px;
+    }
+
+    ul.nav.nav-tabs {
+        display: flex;
+        align-items: stretch;
+    }
+
+    li.nav-item {
+        flex: 1;
+    }
+
+    button {
+        font-size: 20px;
+        width: 100%;
+    }
+    
+    .contButton {
+        width: 80%;
+    }
+
+    input, textArea {
+        font-size: 20px;
+    }
+
+    .error-message {
+        font-size: 15px;
+    }
+}

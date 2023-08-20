@@ -42,7 +42,7 @@ export default function Contact() {
   
     return (
       <div className='contactCont'>
-        <h2>Contact Form</h2>
+        <h2 className='extraYellow'>Contact Form</h2>
         <form className='bodyText'>
           <div className='clientIn'>
             <label>Name:</label>
@@ -73,7 +73,8 @@ export default function Contact() {
             />
             {erMessage && <span className="error-message">Message is required</span>}
           </div>
-          <button type="submit">Submit</button>
+          <button type="submit" className="contButton">Submit</button>
+          <h3>Or email me at: <span className="myEmail">fakeemail@mail.com</span></h3>
         </form>
       </div>
     );
