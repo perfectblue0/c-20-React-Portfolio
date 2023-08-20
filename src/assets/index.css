@@ -1,18 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Open+Sans&family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500;600&family=Red+Hat+Text:wght@400;600&display=swap');
 
+:root {
+    --goldGlow: 2px 2px 4px rgba(231, 255, 78, 0.5);
+    --paleYellow: #FFEB3B;
+    --redViolet: rgba(9, 0, 0, 0.806);
+    --skyBlue: rgba(0, 123, 255, 0.7);
+    --openSans: 'Open Sans', cursive;
+    --juliusSans: 'Julius Sans One', sans-serif;
+    --redHat: 'Red Hat Text', sans-serif;
+}
+
 header {
-    font-family: 'Open Sans', cursive;
+    font-family: var(--openSans);
     font-size: 20px;
     display: flex;
     flex-direction: column;
 }
 
 h1 {
-    font-family: 'Julius Sans One', sans-serif;
+    font-family: var(--juliusSans);
     font-size: 90px;
     text-align: center;
     color: rgb(10, 29, 29);
-    text-shadow: 2px 2px 4px rgba(231, 255, 78, 0.5);
+    text-shadow: var(--goldGlow);
 }
 
 body {
@@ -55,10 +65,10 @@ body {
 
 /* styles the navigation content */
 h2 {
-    font-family: 'Red Hat Text', sans-serif;
-    color: rgb(0, 0, 0);
+    font-family: var(--redHat);
+    color: black;
     font-size: 40px;
-    text-shadow: 2px 2px 4px rgba(231, 255, 78, 0.5);
+    text-shadow: var(--goldGlow);
     text-align: center;
 }
 
@@ -73,24 +83,26 @@ ul.nav.nav-tabs {
 }
 
 button, .resumeLink {
-  font-family: 'Open Sans', cursive;
+  font-family: var(--juliusSans);
   display: inline-block;
   padding: 10px 20px;
   background-color: rgba(0, 123, 255, 0.2);
-  color: rgb(254, 0, 0);
+  color: rgb(236, 22, 140);
   border: none;
   border-radius: 5px;
   cursor: pointer;
   text-align: center;
   border: 1px solid rgba(251, 205, 79, 0.295);
+  text-shadow: 3px 1px 5px rgb(255 59 59);
 }
 
 .nav-link.active {
-    color: #FFEB3B;
+    color: var(--paleYellow);
   }
 
 .nav-item:hover, button:hover, .resumeLink:hover {
-    background-color: rgba(0, 123, 255, 0.7);
+    background-color: var(--skyBlue);
+    color: black;
 }
 
 a {
@@ -164,7 +176,7 @@ img.project-image {
 }
 
 .project-image:hover {
-    box-shadow: 7px 8px 8px rgb(0, 123, 255, 0.7);
+    box-shadow: 1px 0px 20px 20px rgb(0 123 255 / 93%);
   }
 
 /* extra shadow for about h2 title */
@@ -178,12 +190,12 @@ img.project-image {
     font-family: 'Open sans', sans-serif;
     font-size: 20px;
     text-align: center;
-    color: #FFEB3B;
+    color: var(--paleYellow);
     text-shadow: 5px -1px 4px #930854;
 }
 
 .project-link:hover {
-    text-shadow: 2px 2px 4px rgba(0, 123, 255, 0.664);
+    text-shadow: 7px 4px 4px rgba(0, 123, 255, 0.9);
 }
 
 /* contact form styling */
@@ -209,7 +221,7 @@ img.project-image {
 }
 
 form.bodyText {
-    background-color: rgba(9, 0, 0, 0.806);
+    background-color: var(--redViolet);
     border-radius: 5px;
     margin-bottom: 80px;
     padding-bottom: 50px;
@@ -251,6 +263,7 @@ textarea {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 30px;
 }
 
 .resumeCont {
@@ -260,7 +273,7 @@ textarea {
 }
 
 .profTitles, .downTitle {
-    font-family: 'Julius Sans One', cursive;
+    font-family: var(--juliusSans);
     color: white;
     font-size: 15px;
 }
@@ -269,7 +282,7 @@ textarea {
     margin: 10px;
     padding: 10px;
     width: 35%;
-    background-color: rgba(9, 0, 0, 0.806);
+    background-color: var(--redViolet);
     border-radius: 5px;
 }
 
@@ -283,7 +296,7 @@ li {
 
 /* styles smaller text that makes up the descriptive content */
 .bodyText, .project-link {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--openSans);
     color: rgb(227, 205, 5);
     text-shadow: 2px 2px 4px rgb(192, 0, 176);
     width: 70%;
@@ -305,7 +318,7 @@ footer {
 }
 
 .icon:hover {
-    color: rgba(0, 123, 255, 0.7);
+    color: var(--skyBlue);
 }
 
 /* media queries */

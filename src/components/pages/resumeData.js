@@ -55,14 +55,18 @@ const allSkills = [
       {
         name: "React",
       },
+    ],
+  },
+  {
+    category: "Database",
+    skills: [
       {
         name: "MongoDB",
       },
-      { name: "Mongoose" },
-      {
-        name: "Regex (Regular Expressions)",
+      { 
+        name: "Mongoose" 
       },
-    ],
+    ]
   },
   {
     category: "Programming Paradigms",
@@ -80,6 +84,9 @@ const allSkills = [
     skills: [
       {
         name: "Inquirer",
+      },
+      {
+        name: "Regular Expressions (Regex)" 
       },
     ],
   },
