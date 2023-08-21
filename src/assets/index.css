@@ -175,10 +175,6 @@ img.project-image {
     border-radius: 10px;
 }
 
-.project-image:hover {
-    box-shadow: 1px 0px 20px 20px rgb(0 123 255 / 93%);
-  }
-
 /* extra shadow for about h2 title */
 .extraYellow {
     text-shadow: 2px 2px 4px rgba(231, 255, 78, 0.805);
@@ -196,7 +192,47 @@ img.project-image {
 
 .project-link:hover {
     text-shadow: 7px 4px 4px rgba(0, 123, 255, 0.9);
+    color: white;
 }
+
+/* styling to make image disappear and message appear */
+.project-image-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .project-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 0.5s ease;
+  }
+  
+  .hover-message {
+    background-color: var(--skyBlue);
+    color: #fff;
+    font-family: var(--openSans);
+    padding: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 5px;
+  }
+  
+  .project-image-container:hover .project-image {
+    opacity: 0;
+  }
+  
+  .project-image-container:hover .hover-message {
+    opacity: 1;
+  }
+  
 
 /* contact form styling */
 
@@ -323,6 +359,18 @@ footer {
 
 /* media queries */
 
+@media screen and (max-width: 400px) {
+
+    input, textArea {
+        font-size: 12px;
+        padding: 5px auto;
+    }
+
+    .profTitles {
+        font-size: 12px;
+    }
+}
+
 @media screen and (max-width: 500px) {
     h1 {
         font-size: 70px;
@@ -354,11 +402,20 @@ footer {
         width: 80%;
     }
 
-    input, textArea {
-        font-size: 20px;
-    }
+   
 
     .error-message {
         font-size: 15px;
+    }
+
+    label {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 680px) {
+
+    .projectCont {
+        flex-direction: column;
     }
 }

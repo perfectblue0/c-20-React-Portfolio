@@ -48,6 +48,7 @@ export default function Contact() {
             <label>Name:</label>
             <input
               type="text"
+              placeholder="name"
               value={name}
               onChange={handleNameChange}
               onBlur={handleBlur}
@@ -58,6 +59,7 @@ export default function Contact() {
             <label>Email:</label>
             <input
               type="email"
+              placeholder="email"
               value={email}
               onChange={handleEmailChange}
               onBlur={handleBlur}
@@ -67,6 +69,7 @@ export default function Contact() {
           <div className='clientIn'>
             <label>Message:</label>
             <textarea
+              placeholder="type your message here"
               value={message}
               onChange={handleMessageChange}
               onBlur={handleBlur}

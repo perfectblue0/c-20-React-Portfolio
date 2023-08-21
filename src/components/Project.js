@@ -5,13 +5,16 @@ const Project = ({ pTitle, image, depLink, gitHLink }) => {
 
   return (
     <div className="project">
-      <img
-        className="project-image"
-        src={imagePath}
-        alt={pTitle}
-        onClick={() => window.open(depLink, '_blank', 'noopener noreferrer')}
-        style={{ cursor: 'pointer' }}
-      />
+      <div className="project-image-container">
+        <img
+          className="project-image"
+          src={imagePath}
+          alt={pTitle}
+          onClick={() => window.open(depLink, '_blank', 'noopener noreferrer')}
+          style={{ cursor: 'pointer' }}
+        />
+        <div className="hover-message">Click to view deployed application</div>
+      </div>
       <h3 className="project-title">{pTitle}</h3>
       <div className="project-links">
         <a className="project-link" href={gitHLink} target="_blank" rel="noopener noreferrer">
