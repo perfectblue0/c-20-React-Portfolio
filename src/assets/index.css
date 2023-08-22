@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Open+Sans&family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500;600&family=Red+Hat+Text:wght@400;600&display=swap');
+
+:root {
+    --goldGlow: 2px 2px 4px rgba(231, 255, 78, 0.5);
+    --paleYellow: #FFEB3B;
+    --redViolet: rgba(9, 0, 0, 0.806);
+    --skyBlue: rgba(0, 123, 255, 0.7);
+    --openSans: 'Open Sans', cursive;
+    --juliusSans: 'Julius Sans One', sans-serif;
+    --redHat: 'Red Hat Text', sans-serif;
+}
+
+header {
+    font-family: var(--openSans);
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: var(--juliusSans);
+    font-size: 90px;
+    text-align: center;
+    color: rgb(10, 29, 29);
+    text-shadow: var(--goldGlow);
+}
+
+body {
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+}
+
+/* styles the big image at top*/
+.mainName {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.mainName::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./projectImages/hallwayBack.jpg'); 
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+/* styles message for viewer */
+
+.message {
+    color: white;
+    text-align: center;
+    margin: 150px;
+}
+
+/* styles the navigation content */
+h2 {
+    font-family: var(--redHat);
+    color: black;
+    font-size: 40px;
+    text-shadow: var(--goldGlow);
+    text-align: center;
+}
+
+.nav-tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+ul.nav.nav-tabs {
+    padding-left: 0px;
+}
+
+button, .resumeLink {
+  font-family: var(--juliusSans);
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgba(0, 123, 255, 0.2);
+  color: rgb(236, 22, 140);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid rgba(251, 205, 79, 0.295);
+  text-shadow: 3px 1px 5px rgb(255 59 59);
+}
+
+.nav-link.active {
+    color: var(--paleYellow);
+  }
+
+.nav-item:hover, button:hover, .resumeLink:hover {
+    background-color: var(--skyBlue);
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* styles profile picture */
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* styles about text */
+.aboutBox {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./projectImages/aboutBack.jpg");
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+    opacity: .8;
+    border-radius: 5px;
+}
+
+.titlePCont, .resumeCont {
+    background-image: url('./projectImages/textureBack.jpg');
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+    opacity: .8;
+    border-radius: 5px;
+
+}
+
+/* styling for projects */
+.projectCont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.project {
+    flex: 0 0 calc(50% - 10px); 
+    margin-bottom: 100px;
+    text-align: center;
+  }
+
+img.project-image {
+    width: 300px;
+    border-radius: 10px;
+}
+
+/* extra shadow for about h2 title */
+.extraYellow {
+    text-shadow: 2px 2px 4px rgba(231, 255, 78, 0.805);
+}
+
+/* styling for project titles */
+
+.project-title {
+    font-family: 'Open sans', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: var(--paleYellow);
+    text-shadow: 5px -1px 4px #930854;
+}
+
+.project-link:hover {
+    text-shadow: 7px 4px 4px rgba(0, 123, 255, 0.9);
+    color: white;
+}
+
+/* styling to make image disappear and message appear */
+.project-image-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .project-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 0.5s ease;
+  }
+  
+  .hover-message {
+    background-color: var(--skyBlue);
+    color: #fff;
+    font-family: var(--openSans);
+    padding: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 5px;
+  }
+  
+  .project-image-container:hover .project-image {
+    opacity: 0;
+  }
+  
+  .project-image-container:hover .hover-message {
+    opacity: 1;
+  }
+  
+
+/* contact form styling */
+
+.contactCont {
+    background-image: url("./projectImages/blueBackG.jpg");
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+    opacity: .8;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.clientIn {
+    display: flex;
+    margin: 30px;
+    justify-content: center;
+    position: relative;
+}
+
+form.bodyText {
+    background-color: var(--redViolet);
+    border-radius: 5px;
+    margin-bottom: 80px;
+    padding-bottom: 50px;
+    border-radius: 5px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input, textarea {
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+
+textarea {
+    height: 100px;
+    width: 200px;
+}
+
+.myEmail {
+    color: white;
+}
+
+/* form error styling */
+.error-message {
+    color: red;
+    font-size: 10px;
+    margin-left: 0px;
+    position: absolute;
+    text-shadow: none;
+    top: 100%;
+}
+
+/* resume styling */
+
+.resumeBody {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.resumeCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profTitles, .downTitle {
+    font-family: var(--juliusSans);
+    color: white;
+    font-size: 15px;
+}
+
+.skillCont {
+    margin: 10px;
+    padding: 10px;
+    width: 35%;
+    background-color: var(--redViolet);
+    border-radius: 5px;
+}
+
+li {
+    list-style: none;
+}
+
+.linkCont {
+    text-align: center;
+}
+
+/* styles smaller text that makes up the descriptive content */
+.bodyText, .project-link {
+    font-family: var(--openSans);
+    color: rgb(227, 205, 5);
+    text-shadow: 2px 2px 4px rgb(192, 0, 176);
+    width: 70%;
+    text-align: center;
+}
+
+/* footer icon styling */
+
+footer {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.icon {
+    color: white;
+    margin: 25px;
+    padding: 10px;
+}
+
+.icon:hover {
+    color: var(--skyBlue);
+}
+
+/* media queries */
+
+@media screen and (max-width: 400px) {
+
+    input, textArea {
+        font-size: 12px;
+        padding: 5px auto;
+    }
+
+    .profTitles {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    h1 {
+        font-size: 70px;
+    }
+
+    .nav-tabs {
+        flex-direction: column;
+    }
+
+    .nav-item {
+        margin-bottom: 30px;
+    }
+
+    ul.nav.nav-tabs {
+        display: flex;
+        align-items: stretch;
+    }
+
+    li.nav-item {
+        flex: 1;
+    }
+
+    button {
+        font-size: 20px;
+        width: 100%;
+    }
+    
+    .contButton {
+        width: 80%;
+    }
+
+   
+
+    .error-message {
+        font-size: 15px;
+    }
+
+    label {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 680px) {
+
+    .projectCont {
+        flex-direction: column;
+    }
+}
