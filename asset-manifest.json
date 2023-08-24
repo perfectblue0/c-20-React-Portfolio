@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/my-react-portfolio/static/css/main.e1b5636b.css",
-    "main.js": "/my-react-portfolio/static/js/main.e67be0e6.js",
-    "static/media/blueBackG.jpg": "/my-react-portfolio/static/media/blueBackG.050a519bfcfcfa4058e4.jpg",
-    "static/media/first-port.png": "/my-react-portfolio/static/media/first-port.62001b4dc699736f005b.png",
-    "static/media/aboutPic.png": "/my-react-portfolio/static/media/aboutPic.de89d922cb360576fbc6.png",
-    "static/media/textureBack.jpg": "/my-react-portfolio/static/media/textureBack.3fb06f5f9d3cb806a93a.jpg",
-    "static/media/hallwayBack.jpg": "/my-react-portfolio/static/media/hallwayBack.7a20f392aa2f2ee35a14.jpg",
-    "static/media/contatPic.png": "/my-react-portfolio/static/media/contatPic.9f75ef84361b5ed2064a.png",
-    "static/media/mobilePic.png": "/my-react-portfolio/static/media/mobilePic.86c8c7a5f663c44e4981.png",
-    "static/media/sunny-s.png": "/my-react-portfolio/static/media/sunny-s.3da9b2ab1c4056b64207.png",
-    "static/media/profile-pic.png": "/my-react-portfolio/static/media/profile-pic.7ba8db1bf953eb04c953.png",
-    "static/media/aboutBack.jpg": "/my-react-portfolio/static/media/aboutBack.b8364fca05b8e8c39c40.jpg",
-    "static/media/random-pass.png": "/my-react-portfolio/static/media/random-pass.11895c1d31a4c1b5ebfb.png",
-    "static/media/work-day-sched.png": "/my-react-portfolio/static/media/work-day-sched.54cc4683f97019ed74fb.png",
-    "static/media/note-taker.png": "/my-react-portfolio/static/media/note-taker.263941e879a1d0b000b4.png",
-    "static/media/timed-quiz.png": "/my-react-portfolio/static/media/timed-quiz.b99fcc24c98d291a7964.png",
-    "static/media/fake-resume.pdf": "/my-react-portfolio/static/media/fake-resume.0b569d22a1481164c1e0.pdf",
-    "index.html": "/my-react-portfolio/index.html",
-    "main.e1b5636b.css.map": "/my-react-portfolio/static/css/main.e1b5636b.css.map",
-    "main.e67be0e6.js.map": "/my-react-portfolio/static/js/main.e67be0e6.js.map"
+    "main.css": "/c-20-React-Portfolio/static/css/main.af0f6de5.css",
+    "main.js": "/c-20-React-Portfolio/static/js/main.d3790035.js",
+    "static/media/blueBackG.jpg": "/c-20-React-Portfolio/static/media/blueBackG.050a519bfcfcfa4058e4.jpg",
+    "static/media/first-port.png": "/c-20-React-Portfolio/static/media/first-port.62001b4dc699736f005b.png",
+    "static/media/aboutPic.png": "/c-20-React-Portfolio/static/media/aboutPic.de89d922cb360576fbc6.png",
+    "static/media/textureBack.jpg": "/c-20-React-Portfolio/static/media/textureBack.3fb06f5f9d3cb806a93a.jpg",
+    "static/media/hallwayBack.jpg": "/c-20-React-Portfolio/static/media/hallwayBack.7a20f392aa2f2ee35a14.jpg",
+    "static/media/contatPic.png": "/c-20-React-Portfolio/static/media/contatPic.9f75ef84361b5ed2064a.png",
+    "static/media/mobilePic.png": "/c-20-React-Portfolio/static/media/mobilePic.86c8c7a5f663c44e4981.png",
+    "static/media/sunny-s.png": "/c-20-React-Portfolio/static/media/sunny-s.3da9b2ab1c4056b64207.png",
+    "static/media/profile-pic.png": "/c-20-React-Portfolio/static/media/profile-pic.7ba8db1bf953eb04c953.png",
+    "static/media/aboutBack.jpg": "/c-20-React-Portfolio/static/media/aboutBack.b8364fca05b8e8c39c40.jpg",
+    "static/media/random-pass.png": "/c-20-React-Portfolio/static/media/random-pass.11895c1d31a4c1b5ebfb.png",
+    "static/media/work-day-sched.png": "/c-20-React-Portfolio/static/media/work-day-sched.54cc4683f97019ed74fb.png",
+    "static/media/note-taker.png": "/c-20-React-Portfolio/static/media/note-taker.263941e879a1d0b000b4.png",
+    "static/media/timed-quiz.png": "/c-20-React-Portfolio/static/media/timed-quiz.b99fcc24c98d291a7964.png",
+    "static/media/fake-resume.pdf": "/c-20-React-Portfolio/static/media/fake-resume.0b569d22a1481164c1e0.pdf",
+    "index.html": "/c-20-React-Portfolio/index.html",
+    "main.af0f6de5.css.map": "/c-20-React-Portfolio/static/css/main.af0f6de5.css.map",
+    "main.d3790035.js.map": "/c-20-React-Portfolio/static/js/main.d3790035.js.map"
   },
   "entrypoints": [
-    "static/css/main.e1b5636b.css",
-    "static/js/main.e67be0e6.js"
+    "static/css/main.af0f6de5.css",
+    "static/js/main.d3790035.js"
   ]
 }
