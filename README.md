@@ -16,9 +16,9 @@ I built this portfolio to practice using React and to showcase applications I ha
  Click on the link to view the deployed application.
 
 ### Deployed Application:  
-[My Portfolio]()
+[My Portfolio](https://perfectblue0.github.io/c-20-React-Portfolio/)
 ### Repo:
-[View My Repo](https://perfectblue0.github.io/c-20-React-Portfolio/)
+[View My Repo](https://github.com/perfectblue0/c-20-React-Portfolio)
 
 ## Usage
 
