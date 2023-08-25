@@ -50,7 +50,7 @@ const allSkills = [
     ],
   },
   {
-    category: "Front-end Frameworks",
+    category: "Front-end JavaScript Library",
     skills: [
       {
         name: "React",
