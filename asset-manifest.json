@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/c-20-React-Portfolio/static/css/main.af0f6de5.css",
-    "main.js": "/c-20-React-Portfolio/static/js/main.d3790035.js",
+    "main.js": "/c-20-React-Portfolio/static/js/main.b6a09438.js",
     "static/media/blueBackG.jpg": "/c-20-React-Portfolio/static/media/blueBackG.050a519bfcfcfa4058e4.jpg",
     "static/media/first-port.png": "/c-20-React-Portfolio/static/media/first-port.62001b4dc699736f005b.png",
     "static/media/aboutPic.png": "/c-20-React-Portfolio/static/media/aboutPic.de89d922cb360576fbc6.png",
@@ -19,10 +19,10 @@
     "static/media/fake-resume.pdf": "/c-20-React-Portfolio/static/media/fake-resume.0b569d22a1481164c1e0.pdf",
     "index.html": "/c-20-React-Portfolio/index.html",
     "main.af0f6de5.css.map": "/c-20-React-Portfolio/static/css/main.af0f6de5.css.map",
-    "main.d3790035.js.map": "/c-20-React-Portfolio/static/js/main.d3790035.js.map"
+    "main.b6a09438.js.map": "/c-20-React-Portfolio/static/js/main.b6a09438.js.map"
   },
   "entrypoints": [
     "static/css/main.af0f6de5.css",
-    "static/js/main.d3790035.js"
+    "static/js/main.b6a09438.js"
   ]
 }
